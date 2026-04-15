@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Simas Stočkus | Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="icon" href="alpha.webp" type="image/webp" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#241a00",
+            "inverse-primary": "#bbc6e2",
+            "tertiary": "#735c00",
+            "surface-container-low": "#f4f2ff",
+            "on-secondary-fixed-variant": "#2f4865",
+            "secondary-fixed": "#d1e4ff",
+            "on-primary": "#ffffff",
+            "surface-container": "#edecff",
+            "outline-variant": "#c4c6cc",
+            "on-error": "#ffffff",
+            "surface-dim": "#d7d8f4",
+            "primary-fixed-dim": "#bbc6e2",
+            "tertiary-fixed": "#ffe088",
+            "on-error-container": "#93000a",
+            "primary-container": "#101b30",
+            "on-background": "#181a2e",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#48617e",
+            "on-surface-variant": "#44474c",
+            "surface-bright": "#fbf8ff",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#79849d",
+            "outline": "#74777d",
+            "secondary-container": "#c2dcff",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#101b30",
+            "on-surface": "#181a2e",
+            "background": "#fbf8ff",
+            "inverse-on-surface": "#f1efff",
+            "on-tertiary-fixed-variant": "#574500",
+            "primary": "#000000",
+            "on-tertiary-container": "#4f3e00",
+            "surface-tint": "#545e76",
+            "on-primary-fixed-variant": "#3c475d",
+            "surface": "#fbf8ff",
+            "tertiary-fixed-dim": "#e9c349",
+            "surface-variant": "#e0e0fc",
+            "secondary": "#47607e",
+            "secondary-fixed-dim": "#afc9ea",
+            "tertiary-container": "#cca730",
+            "primary-fixed": "#d7e2ff",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#e6e6ff",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e0e0fc",
+            "inverse-surface": "#2d2f44",
+            "on-secondary-fixed": "#001d36"
+          },
+          fontFamily: {
+            "headline": ["Newsreader"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fbf8ff;
+      color: #181a2e;
+    }
+
+    .serif-display {
+      font-family: 'Newsreader', serif;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fbf8ff] dark:bg-slate-950 opacity-90 backdrop-blur-md">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-12 py-6">
+      <div class="text-2xl font-bold font-['Newsreader'] text-[#0D1B2A] dark:text-white">Simas Stočkus</div>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-[#0D1B2A] dark:text-white border-b border-[#0D1B2A] dark:border-white pb-1 font-bold font-['Newsreader'] italic tracking-tight transition-colors duration-300"
+          href="#">About</a>
+        <a class="text-[#47607e] dark:text-slate-400 font-medium font-['Newsreader'] italic tracking-tight hover:text-[#0D1B2A] dark:hover:text-white transition-colors duration-300"
+          href="cv.html">CV</a>
+        <a class="text-[#47607e] dark:text-slate-400 font-medium font-['Newsreader'] italic tracking-tight hover:text-[#0D1B2A] dark:hover:text-white transition-colors duration-300"
+          href="projects.html">Projects</a>
+      </div>
+      <button
+        class="px-6 py-2 bg-primary text-on-primary rounded-md font-medium text-sm hover:opacity-90 active:scale-[0.99] transition-all">
+        <a href="mailto:simas.devmail@gmail.com">Contact</a>
+      </button>
+    </div>
+    <div class="bg-[#f4f2ff] dark:bg-slate-900 h-[1px] w-full absolute bottom-0"></div>
+  </nav>
+  <main class="pt-32 pb-24">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+      <div class="md:col-span-7">
+        <div class="mb-4 flex items-center gap-3">
+          <span class="w-12 h-[1px] bg-secondary opacity-30"></span>
+          <span class="font-label text-tertiary text-xs tracking-[0.2em] font-bold uppercase">Academic Profile</span>
+        </div>
+        <h1
+          class="serif-display text-6xl md:text-8xl text-on-background font-bold leading-[1.1] mb-8 tracking-tight italic">
+          Precision in <br /> Mathematics, <br /> Rigor in Finance.
+        </h1>
+        <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+          A Mathematics student at <span class="text-primary font-semibold">Vilnius University</span>, blending
+          stochastic modeling with financial intuition to solve complex analytical challenges.
+        </p>
+        <div class="flex items-center gap-8">
+          <div class="flex flex-col">
+            <span class="serif-display text-4xl font-bold">3.4</span>
+            <span class="font-label text-xs text-on-secondary-container opacity-60 tracking-wider">GPA EQUIV</span>
+          </div>
+          <div class="w-[1px] h-12 bg-outline-variant opacity-20"></div>
+          <div class="flex flex-col">
+            <span class="serif-display text-4xl font-bold">Σ</span>
+            <span class="font-label text-xs text-on-secondary-container opacity-60 tracking-wider">QUANT FOCUS</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-5 relative">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-sm relative group">
+          <img alt="Abstract mathematical visualization"
+            class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700"
+            data-alt="Abstract visualization of mathematical formulas and geometric shapes glowing softly in a dark, scholarly library setting with cool blue tones"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2WJ8tbHFupK6QSS81yKiD0oJ9VH6tcO5uZ565o1wfkTmSLibMudAagaEQPlalj7v7oSfXyWoj4Pi53J3ToaOyAWfffl8OYebQFdZQYkwAS70VNPZLIQGnDBWCtIZGs_YfKeKar6ZM0g3RAMYNNRq14bS1Lu8SYwz0lG3m1DF3lZCN1fnFJ9MzmzSSTroyPTyNaE0Z5Yn48wUM7uq-EK5yJ78oJgXJZEsUVbwCwgDjagK1ObaiFAhDCMiSDvJM9xXzbfMvtlYzVKkT" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 to-transparent"></div>
+        </div>
+        <!-- Floating Element -->
+        <div
+          class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl backdrop-blur-md border border-white/10 max-w-[240px]">
+          <span class="material-symbols-outlined text-tertiary mb-3">analytics</span>
+          <p class="font-body text-sm italic text-secondary leading-snug">"Bridging the gap between abstract theory and
+            market reality."</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Summary Section -->
+    <section class="max-w-7xl mx-auto px-12 mt-40">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <h2 class="serif-display text-3xl font-semibold italic text-primary">The Scholar's Path</h2>
+        </div>
+        <div class="md:col-span-8">
+          <div class="bg-surface-container-low p-12 rounded-xl">
+            <p class="font-body text-2xl leading-relaxed text-on-surface-variant font-light italic">
+              Dedicated to the exploration of structural patterns in financial data, my work focuses on the intersection
+              of stochastic calculus and econometric forecasting. At Vilnius University, I am honing the analytical
+              tools required to navigate the complexities of global markets.
+            </p>
+            <div class="mt-12 flex flex-wrap gap-3">
+              <span
+                class="px-4 py-1.5 bg-surface-container-high rounded-full font-label text-xs font-semibold text-on-secondary-fixed-variant">Mathematical
+                Analysis</span>
+              <span
+                class="px-4 py-1.5 bg-surface-container-high rounded-full font-label text-xs font-semibold text-on-secondary-fixed-variant">Probability
+                Theory</span>
+              <span
+                class="px-4 py-1.5 bg-surface-container-high rounded-full font-label text-xs font-semibold text-on-secondary-fixed-variant">Financial
+                Econometrics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quick Highlights (Bento-style Grid) -->
+    <section class="max-w-7xl mx-auto px-12 mt-40">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <h3 class="font-label text-xs tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Core Foundations</h3>
+          <h2 class="serif-display text-5xl font-bold italic">Quick Highlights</h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Education Card -->
+        <div
+          class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-low flex flex-col justify-between h-80">
+          <div>
+            <div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-on-secondary-container">school</span>
+            </div>
+            <h4 class="serif-display text-2xl font-bold mb-3">Education</h4>
+            <p class="font-body text-on-surface-variant">B.Sc. Mathematics at Vilnius University. Specialized focus on
+              Applied Statistics and Finance.</p>
+          </div>
+          <div
+            class="flex items-center gap-2 text-secondary font-semibold text-sm group-hover:translate-x-1 transition-transform cursor-pointer">
+            View Academic Record
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </div>
+        <!-- Interests Card -->
+        <div
+          class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-low flex flex-col justify-between h-80">
+          <div>
+            <div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-on-secondary-container">interests</span>
+            </div>
+            <h4 class="serif-display text-2xl font-bold mb-3">Key Interests</h4>
+            <ul class="font-body text-on-surface-variant space-y-2">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tertiary rounded-full"></span> Quantitative
+                Finance</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tertiary rounded-full"></span> Bayesian
+                Statistics</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tertiary rounded-full"></span> Risk Management
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex items-center gap-2 text-secondary font-semibold text-sm group-hover:translate-x-1 transition-transform cursor-pointer">
+            Explore Research
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </div>
+        <!-- Projects Card -->
+        <div
+          class="group bg-primary-container p-8 rounded-xl transition-all duration-300 flex flex-col justify-between h-80 relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 opacity-80">
+              <span class="material-symbols-outlined text-white">architecture</span>
+            </div>
+            <h4 class="serif-display text-2xl font-bold mb-3 text-white">Featured Projects</h4>
+            <p class="font-body text-on-primary-container text-sm leading-relaxed">Modeling market volatility through
+              non-linear stochastic processes and algorithm development.</p>
+          </div>
+          <div
+            class="relative z-10 flex items-center gap-2 text-white font-semibold text-sm group-hover:translate-x-1 transition-transform cursor-pointer">
+            Portfolio Gallery
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+          <!-- Decorative Graphic -->
+          <div class="absolute -right-12 -bottom-12 opacity-10">
+            <span class="material-symbols-outlined text-[12rem]" data-weight="fill">functions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Academic Timeline Indicator -->
+    <section class="max-w-7xl mx-auto px-12 mt-40">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-24 py-16 border-y border-outline-variant/15">
+        <div class="text-center">
+          <p class="font-label text-xs text-secondary mb-2 tracking-widest uppercase">Currently</p>
+          <p class="serif-display text-xl font-bold italic">VU Faculty of Mathematics</p>
+        </div>
+        <div class="hidden md:block w-32 h-[1px] bg-secondary-fixed relative">
+          <div class="absolute -top-1 left-1/2 w-2 h-2 bg-secondary rounded-full"></div>
+        </div>
+        <div class="text-center opacity-40">
+          <p class="font-label text-xs text-secondary mb-2 tracking-widest uppercase">Research Focus</p>
+          <p class="serif-display text-xl font-bold italic">Financial Modularity</p>
+        </div>
+        <div class="hidden md:block w-32 h-[1px] bg-secondary-fixed relative">
+          <div class="absolute -top-1 left-1/2 w-2 h-2 bg-secondary rounded-full"></div>
+        </div>
+        <div class="text-center opacity-40">
+          <p class="font-label text-xs text-secondary mb-2 tracking-widest uppercase">Seeking</p>
+          <p class="serif-display text-xl font-bold italic">Quant Internships</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full border-t border-[#c4c6cc]/15 bg-[#f4f2ff] dark:bg-slate-900">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto gap-8">
+      <div class="flex flex-col gap-2">
+        <span class="font-['Newsreader'] text-lg font-semibold text-[#0D1B2A] dark:text-white">Simas Stočkus</span>
+        <p class="font-['Manrope'] text-sm tracking-wide text-[#47607e] dark:text-slate-300">© 2026 Simas Stočkus.</p>
+      </div>
+      <div class="flex gap-10">
+        <a class="text-[#47607e] dark:text-slate-400 font-['Manrope'] text-sm tracking-wide hover:text-[#735c00] dark:hover:text-yellow-500 transition-all underline"
+          href="https://www.linkedin.com/in/simasstockus/">LinkedIn</a>
+        <a class="text-[#47607e] dark:text-slate-400 font-['Manrope'] text-sm tracking-wide hover:text-[#735c00] dark:hover:text-yellow-500 transition-all"
+          href="https://github.com/BitWss">GitHub</a>
+        <a class="text-[#47607e] dark:text-slate-400 font-['Manrope'] text-sm tracking-wide hover:text-[#735c00] dark:hover:text-yellow-500 transition-all"
+          href="mailto:simas.devmail@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

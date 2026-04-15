@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="alpha.webp" type="image/webp" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#241a00",
+                        "inverse-primary": "#bbc6e2",
+                        "tertiary": "#735c00",
+                        "surface-container-low": "#f4f2ff",
+                        "on-secondary-fixed-variant": "#2f4865",
+                        "secondary-fixed": "#d1e4ff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#edecff",
+                        "outline-variant": "#c4c6cc",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d7d8f4",
+                        "primary-fixed-dim": "#bbc6e2",
+                        "tertiary-fixed": "#ffe088",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#101b30",
+                        "on-background": "#181a2e",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#48617e",
+                        "on-surface-variant": "#44474c",
+                        "surface-bright": "#fbf8ff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#79849d",
+                        "outline": "#74777d",
+                        "secondary-container": "#c2dcff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#101b30",
+                        "on-surface": "#181a2e",
+                        "background": "#fbf8ff",
+                        "inverse-on-surface": "#f1efff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary": "#000000",
+                        "on-tertiary-container": "#4f3e00",
+                        "surface-tint": "#545e76",
+                        "on-primary-fixed-variant": "#3c475d",
+                        "surface": "#fbf8ff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-variant": "#e0e0fc",
+                        "secondary": "#47607e",
+                        "secondary-fixed-dim": "#afc9ea",
+                        "tertiary-container": "#cca730",
+                        "primary-fixed": "#d7e2ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e6e6ff",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e0e0fc",
+                        "inverse-surface": "#2d2f44",
+                        "on-secondary-fixed": "#001d36"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fbf8ff;
+            color: #181a2e;
+        }
+
+        .serif-display {
+            font-family: 'Newsreader', serif;
+        }
+
+        .text-justify-analytical {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-fixed">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#fbf8ff] dark:bg-slate-950 opacity-90 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-12 py-6">
+            <span class="text-2xl font-bold font-['Newsreader'] text-[#0D1B2A] dark:text-white">Theorem &amp;
+                Ledger</span>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-[#47607e] dark:text-slate-400 font-medium hover:text-[#0D1B2A] dark:hover:text-white transition-colors duration-300"
+                    href="index.html">About</a>
+                <a class="text-[#0D1B2A] dark:text-white border-b border-[#0D1B2A] dark:border-white pb-1 font-bold"
+                    href="cv.html">CV</a>
+                <a class="text-[#47607e] dark:text-slate-400 font-medium hover:text-[#0D1B2A] dark:hover:text-white transition-colors duration-300"
+                    href="projects.html">Projects</a>
+                <button
+                    class="bg-primary-container text-white px-6 py-2 rounded-md font-label text-sm hover:opacity-90 transition-all">Contact</button>
+            </div>
+        </div>
+        <div class="bg-[#f4f2ff] dark:bg-slate-900 h-[1px] w-full absolute bottom-0"></div>
+    </nav>
+    <main class="pt-32 pb-24 px-6 md:px-24 max-w-7xl mx-auto">
+        <!-- Header / Identity -->
+        <header
+            class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-outline-variant/15 pb-12">
+            <div>
+                <h1 class="serif-display text-6xl font-bold italic tracking-tighter text-primary leading-none">
+                    Curriculum Vitae</h1>
+                <p class="font-body text-xl text-secondary mt-4 max-w-xl">A record of academic rigor, analytical
+                    development, and strategic contribution.</p>
+            </div>
+            <div class="text-right font-label space-y-1">
+                <p class="text-on-surface-variant text-sm tracking-widest uppercase">Location: Vilnius, Lithuania</p>
+                <p class="text-secondary font-semibold">Analytical Rigor &amp; Finance Portfolio</p>
+            </div>
+        </header>
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Left Column: Core Experience (8 Columns) -->
+            <div class="lg:col-span-8 space-y-20">
+                <!-- Education Section -->
+                <section>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary"
+                            style="font-variation-settings: 'FILL' 1;">school</span>
+                        <h2 class="serif-display text-3xl font-semibold italic">Education</h2>
+                    </div>
+                    <div class="space-y-12">
+                        <div class="group relative">
+                            <div
+                                class="flex flex-col md:flex-row md:justify-between items-start md:items-baseline mb-2">
+                                <h3 class="font-body text-xl font-bold text-primary">Vilnius University</h3>
+                                <span
+                                    class="font-label text-sm text-secondary bg-surface-container-low px-3 py-1 rounded-full">2021
+                                    — Present</span>
+                            </div>
+                            <p class="serif-display text-lg italic text-on-surface-variant">BSc in Quantitative
+                                Economics</p>
+                            <p
+                                class="font-body text-sm mt-4 text-justify-analytical text-on-surface-variant leading-relaxed">
+                                Pursuing a rigorous curriculum focused on econometric modeling, advanced calculus, and
+                                economic theory. Developing a deep understanding of data-driven decision-making within
+                                global financial markets.
+                            </p>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="flex flex-col md:flex-row md:justify-between items-start md:items-baseline mb-2">
+                                <h3 class="font-body text-xl font-bold text-primary">Vilnius Lyceum</h3>
+                                <span
+                                    class="font-label text-sm text-secondary bg-surface-container-low px-3 py-1 rounded-full">2017
+                                    — 2021</span>
+                            </div>
+                            <p class="serif-display text-lg italic text-on-surface-variant">High School Diploma</p>
+                            <p
+                                class="font-body text-sm mt-4 text-justify-analytical text-on-surface-variant leading-relaxed">
+                                Specialized in Mathematics and Social Sciences. Engaged in competitive academic
+                                environments fostering structured thinking and problem-solving excellence.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Courses & Self-Development -->
+                <section>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary"
+                            style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                        <h2 class="serif-display text-3xl font-semibold italic">Courses and Self-Development</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div
+                            class="bg-surface-container-low p-8 rounded-lg hover:bg-surface-container transition-colors duration-300">
+                            <h3 class="font-body font-bold text-primary">NYU Stern School of Business</h3>
+                            <p class="serif-display italic text-secondary mb-4">Financial Analysis &amp; Valuation</p>
+                            <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                                Intensive focus on corporate valuation methodologies, including DCF modeling, comparable
+                                analysis, and market metrics evaluation.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-surface-container-low p-8 rounded-lg hover:bg-surface-container transition-colors duration-300">
+                            <h3 class="font-body font-bold text-primary">PE/VC Seminars</h3>
+                            <p class="serif-display italic text-secondary mb-4">Strategic Investment Cycles</p>
+                            <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                                Explorations into private equity structures, venture capital deal flow, and the life
+                                cycle of alternative investment vehicles.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Extracurricular Activities -->
+                <section>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary"
+                            style="font-variation-settings: 'FILL' 1;">groups</span>
+                        <h2 class="serif-display text-3xl font-semibold italic">Extracurricular Activities</h2>
+                    </div>
+                    <div class="space-y-10">
+                        <div class="flex gap-6">
+                            <div class="w-1 bg-secondary-fixed rounded-full"></div>
+                            <div>
+                                <h3 class="font-body text-lg font-bold text-primary">VU SA MIF (Student Association)
+                                </h3>
+                                <p class="font-label text-xs text-tertiary uppercase tracking-wider mb-2">Member of
+                                    Marketing &amp; HR Units</p>
+                                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                    Contributing to the strategic communication and internal management of the Faculty
+                                    of Mathematics and Informatics. Facilitating student engagement and organizational
+                                    growth.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-1 bg-secondary-fixed rounded-full"></div>
+                            <div>
+                                <h3 class="font-body text-lg font-bold text-primary">Vilnius Lyceum Events</h3>
+                                <p class="font-label text-xs text-tertiary uppercase tracking-wider mb-2">Lead Organizer
+                                    &amp; Coordinator</p>
+                                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                    Managed logistics, team coordination, and financial budgeting for high-profile
+                                    school-wide events and academic seminars.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Right Column: Skills & Details (4 Columns) -->
+            <div class="lg:col-span-4 space-y-16">
+                <!-- Programming Skills -->
+                <div class="bg-surface-container-highest p-10 rounded-xl">
+                    <h2 class="serif-display text-2xl font-semibold italic mb-6 border-b border-outline/20 pb-4">
+                        Programming</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-surface-container-lowest text-on-surface-variant font-label text-xs rounded-full">Python</span>
+                        <span
+                            class="px-3 py-1 bg-surface-container-lowest text-on-surface-variant font-label text-xs rounded-full">R
+                            (Statistical)</span>
+                        <span
+                            class="px-3 py-1 bg-surface-container-lowest text-on-surface-variant font-label text-xs rounded-full">SQL</span>
+                        <span
+                            class="px-3 py-1 bg-surface-container-lowest text-on-surface-variant font-label text-xs rounded-full">MATLAB</span>
+                    </div>
+                </div>
+                <!-- Technical & Soft Skills -->
+                <div class="space-y-10">
+                    <section>
+                        <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em] mb-4">
+                            Technical</h3>
+                        <ul class="space-y-3 font-body text-sm text-on-surface">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Financial Modeling &amp; Forecasting
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Econometric Analysis
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Data Visualization (Tableau)
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em] mb-4">Soft
+                            Skills</h3>
+                        <ul class="space-y-3 font-body text-sm text-on-surface">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Analytical Problem Solving
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Strategic Communication
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                Collaborative Leadership
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Languages -->
+                    <section>
+                        <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em] mb-4">
+                            Languages</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-body mb-1">
+                                    <span>Lithuanian</span>
+                                    <span class="text-secondary italic">Native</span>
+                                </div>
+                                <div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+                                    <div class="h-full bg-primary w-full"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-body mb-1">
+                                    <span>English</span>
+                                    <span class="text-secondary italic">C2 Proficient</span>
+                                </div>
+                                <div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+                                    <div class="h-full bg-primary w-[95%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-body mb-1">
+                                    <span>German</span>
+                                    <span class="text-secondary italic">Intermediate</span>
+                                </div>
+                                <div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+                                    <div class="h-full bg-primary w-[60%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Abstract Visual element for "Analytical Rigor" -->
+                <div class="relative h-64 w-full bg-primary-container rounded-xl overflow-hidden mt-12 group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-container to-secondary opacity-60">
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center p-8">
+                        <p class="serif-display text-white text-xl italic text-center leading-relaxed">"Rigorous
+                            analysis is the foundation of institutional trust."</p>
+                    </div>
+                    <img alt="Financial chart overlay"
+                        class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-30 transition-transform duration-700 group-hover:scale-110"
+                        data-alt="abstract close-up of a complex financial data chart with glowing lines and numbers on a dark background in high end aesthetic"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3rx6piuelMj9zxbJnxxxALqmQ3txrpchggi7XeDV2glJvulg5OcaaPxjn8N1LiwO6cpJBU_9VVkru9vngnYMvOqOFQxIvxsre-7N0LxCja3J_-XkOphcakSVzTCLmnaX8Oh4_dPF2hgk17lRwu0DM2R_RUYH1TTCt4ywScTNW2tVAMSjTlzHa88Wv8z3r8LMnO3YzFnHSD5xundHucvxDBvJwBnLiDAU_K7LeRXOnkLpeXuiTy2SGCbD9xyMIJqwj946Al7nhMbM" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f4f2ff] dark:bg-slate-900 border-t border-[#c4c6cc]/15">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto gap-8">
+            <span class="font-['Newsreader'] text-lg font-semibold text-[#0D1B2A] dark:text-white">Theorem &amp;
+                Ledger</span>
+            <div class="flex gap-12 font-['Manrope'] text-sm tracking-wide text-[#47607e] dark:text-slate-300">
+                <a class="hover:text-[#735c00] dark:hover:text-yellow-500 transition-all" href="#">LinkedIn</a>
+                <a class="hover:text-[#735c00] dark:hover:text-yellow-500 transition-all" href="#">GitHub</a>
+                <a class="hover:text-[#735c00] dark:hover:text-yellow-500 transition-all" href="#">Email</a>
+                <a class="hover:text-[#735c00] dark:hover:text-yellow-500 transition-all" href="#">Privacy</a>
+            </div>
+            <p class="font-['Manrope'] text-sm tracking-wide text-[#47607e] dark:text-slate-300">© 2024 Theorem &amp;
+                Ledger. Analytical Rigor by Design.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
